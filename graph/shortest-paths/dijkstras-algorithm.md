@@ -2,13 +2,13 @@
 
 Dijkstra’s algorithm solves single-source shortest-paths problem. It is a type of greedy algorithm.
 
-### Assumptions of Dijkstra's Algorithm
+## Assumptions of Dijkstra's Algorithm
 
 1. The graph is connected.
 2. The edges are undirected.
 3. The edge weights are **non-negative**.
 
-### Edge Relaxation
+## Edge Relaxation
 
 Edge relaxation is a helper function.
 
@@ -20,25 +20,25 @@ Stretch it first, then relax, so it's called relaxation.
 2. Initially,$$D[v]=0$$, and$$D[u]=\infty$$for each other vertex$$u$$in the graph. 
 3. $$D[u]$$will afterwards be updated if a better path is found that results in a smaller shortest path value to$$u$$. This step is relaxation.
 
-### Dijkstra's Algorithm
+## Dijkstra's Algorithm
 
-#### Two sets$$C$$and $$S$$.
+### Two sets
 
 * $$C$$contains the vertices which we have already found the shortest paths to them.
   * After a vertex was put in$$C$$,  we should never update it again, because the solution has been found at the moment it was put in.
 * $$S$$contains the vertices connecting to the vertices in$$C$$.
 
-#### Steps
+### Steps
 
-1. Initially, $$C=\emptyset, S=\{v\}$$, where $$v$$is the starting vertex.
+1. Initially,$$C=\emptyset, S=\{v\}$$, where $$v$$is the starting vertex.
 2. Do edge relaxation initialization; that is,$$D[v]=0$$and$$D[u]=\infty$$for each other vertex$$u$$.
 3. Select the vertex$$s$$in$$S$$who has the shortest path to$$v$$,.
-   1. Move $$s$$ to$$C$$.
+   1. Move$$s$$to$$C$$.
    2. For every vertex which is connected to$$s$$and not in$$C$$, do edge relaxation.
    3. Add these connected vertices to$$C$$.
 4. Repeating step$$#3$$util $$S=\emptyset$$.
 
-### Example
+## Example
 
 ![\*Figure is &#xA9; Understanding Data Communications and Networks by William A. Shay - PWS publishing company, Third Edition. ISBN-10: 0534383173, ISBN-13:. 978-0534383176  ](../../.gitbook/assets/sp.jpg)
 
