@@ -52,7 +52,7 @@ Stretch it first, then relax, so it's called relaxation.
    * $$D[C]=1<\infty$$
 5. Put $$B,C$$in the set$$S$$.
    * $$C=\{A\},S=\{B,C\}$$
-6. Move the vertex$$C$$from$$S$$to$$C$$, because$$D[C]<D[B]$$
+6. Move the vertex$$C$$from$$S$$to$$C$$because$$D[C]<D[B]$$
    *  $$C=\{A,C\},S=\{B\}$$
 7. Relax$$D[D],D[E],D[F]$$because$$D,E,F$$are connected to the vertex$$C$$and they are **not** in the set$$C$$.
    * $$D[D]=D[C]+e_{CD}=4<\infty$$
@@ -60,7 +60,7 @@ Stretch it first, then relax, so it's called relaxation.
    * $$D[F]=D[C]+e_{CF}=8<\infty$$
 8. Put$$D,E,F$$in the set$$S$$.
    * $$C=\{A,C\},S=\{B,D,E,F\}$$
-9. Move the vertex$$B$$from$$S$$to$$C$$, because$$D[B]<D[D]<D[E]<D[F]$$.
+9. Move the vertex$$B$$from$$S$$to$$C$$because$$D[B]<D[D]<D[E]<D[F]$$.
    * $$C=\{A,C,B\},S=\{D,E,F\}$$
 10. Relax $$D[D],D[E],D[F]$$because $$D,E,F$$are connected to$$B$$and they are **not** in the set$$C$$.
     * $$D[D]=D[B]+e_{BD}=5>4$$
@@ -71,7 +71,19 @@ Stretch it first, then relax, so it's called relaxation.
     * $$D[F]=D[B]+e_{BF}=9>8$$❌ 
 11. No more vertices put in the set$$S$$.
     * $$C=\{A,C,B\},S=\{D,E,F\}$$
-12.  Repeating $$#3-#11$$until $$S=\emptyset$$.
+12. Move $$D$$from $$S$$to$$C$$ because $$D[D]<D[E]<D[F]$$.
+    * $$C=\{A,C,B,D\},S=\{E,F\}$$
+13. Relax $$D[F]$$.
+    * $$D[F]=D[D]+e_{DF}=6<8$$
+14. No more vertices put in the set$$S$$.
+    * $$C=\{A,C,B,D\},S=\{E,F\}$$
+15. Move$$E$$or $$F$$to$$C$$ because$$D[E]=D[F]$$
+    * $$C=\{A,C,B,D,E\},S=\{F\}$$
+16. Relax$$D[F]$$.
+    * $$D[F]=D[E]+e_{EF}=12>6$$❌ 
+17. No more vertices put in the set$$S$$.
+    * $$C=\{A,C,B,D,E\},S=\{F\}$$
+18.  Move$$F$$to$$C$$, now$$S=\emptyset$$.
 
 | $$C$$ | $$S$$ | $$s$$ | $$A$$ | $$B$$ | $$C$$ | $$D$$ | $$E$$ | $$F$$ | $$A$$ | $$B$$ | $$C$$ | $$D$$ | $$E$$ | $$F$$ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
