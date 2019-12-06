@@ -45,45 +45,44 @@ Stretch it first, then relax, so it's called relaxation.
 1. $$C=\emptyset, S=\{A\}$$
 2. $$D[A]=0, D[B]=\infty,D[C]=\infty,D[D]=\infty,D[E]=\infty,D[F]=\infty$$
 3. Move the vertex$$A$$from$$S$$to$$C$$because $$D[A]$$is the smallest one among all vertices in$$S$$.
-   * Currently, only one vertex in$$S$$, so it is the chosen one.
    * $$C=\{A\},S=\emptyset$$
-4. Relax$$D[B]$$and$$D[C]$$because $$B,C$$ are connected to$$A$$and they are **not** in the set$$C$$.
-   * $$D[B]=2<\infty$$
-   * $$D[C]=1<\infty$$
-5. Put $$B,C$$in the set$$S$$.
-   * $$C=\{A\},S=\{B,C\}$$
-6. Move the vertex$$C$$from$$S$$to$$C$$because$$D[C]<D[B]$$
+   * Relax$$D[B]$$and$$D[C]$$because $$B,C$$ are connected to$$A$$and they are **not** in the set$$C$$.
+     * $$D[B]=2<\infty$$
+     * $$D[C]=1<\infty$$
+   * Put $$B,C$$in the set$$S$$.
+     * $$C=\{A\},S=\{B,C\}$$
+4. Move the vertex$$C$$from$$S$$to$$C$$because$$D[C]<D[B]$$
    *  $$C=\{A,C\},S=\{B\}$$
-7. Relax$$D[D],D[E],D[F]$$because$$D,E,F$$are connected to the vertex$$C$$and they are **not** in the set$$C$$.
-   * $$D[D]=D[C]+e_{CD}=4<\infty$$
-   * $$D[E]=D[C]+e_{CE}=7<\infty$$
-   * $$D[F]=D[C]+e_{CF}=8<\infty$$
-8. Put$$D,E,F$$in the set$$S$$.
-   * $$C=\{A,C\},S=\{B,D,E,F\}$$
-9. Move the vertex$$B$$from$$S$$to$$C$$because$$D[B]<D[D]<D[E]<D[F]$$.
+   * Relax$$D[D],D[E],D[F]$$because$$D,E,F$$are connected to the vertex$$C$$and they are **not** in the set$$C$$.
+     * $$D[D]=D[C]+e_{CD}=4<\infty$$
+     * $$D[E]=D[C]+e_{CE}=7<\infty$$
+     * $$D[F]=D[C]+e_{CF}=8<\infty$$
+   * Put$$D,E,F$$in the set$$S$$.
+     * $$C=\{A,C\},S=\{B,D,E,F\}$$
+5. Move the vertex$$B$$from$$S$$to$$C$$because$$D[B]<D[D]<D[E]<D[F]$$.
    * $$C=\{A,C,B\},S=\{D,E,F\}$$
-10. Relax $$D[D],D[E],D[F]$$because $$D,E,F$$are connected to$$B$$and they are **not** in the set$$C$$.
-    * $$D[D]=D[B]+e_{BD}=5>4$$
+   * Relax $$D[D],D[E],D[F]$$because $$D,E,F$$are connected to$$B$$and they are **not** in the set$$C$$.
+     * $$D[D]=D[B]+e_{BD}=5>4$$
 
-      ❌ $$D[D]$$ should not be updated because its previous value is smaller.
+       ❌ $$D[D]$$ should not be updated because its previous value is smaller.
 
-    * $$D[E]=D[B]+e_{BE}=6<7$$
-    * $$D[F]=D[B]+e_{BF}=9>8$$❌ 
-11. No more vertices put in the set$$S$$.
-    * $$C=\{A,C,B\},S=\{D,E,F\}$$
-12. Move $$D$$from $$S$$to$$C$$ because $$D[D]<D[E]<D[F]$$.
-    * $$C=\{A,C,B,D\},S=\{E,F\}$$
-13. Relax $$D[F]$$.
-    * $$D[F]=D[D]+e_{DF}=6<8$$
-14. No more vertices put in the set$$S$$.
-    * $$C=\{A,C,B,D\},S=\{E,F\}$$
-15. Move$$E$$or $$F$$to$$C$$ because$$D[E]=D[F]$$
-    * $$C=\{A,C,B,D,E\},S=\{F\}$$
-16. Relax$$D[F]$$.
-    * $$D[F]=D[E]+e_{EF}=12>6$$❌ 
-17. No more vertices put in the set$$S$$.
-    * $$C=\{A,C,B,D,E\},S=\{F\}$$
-18.  Move$$F$$to$$C$$, now$$S=\emptyset$$.
+     * $$D[E]=D[B]+e_{BE}=6<7$$
+     * $$D[F]=D[B]+e_{BF}=9>8$$❌ 
+   * No more vertices put in the set$$S$$.
+     * $$C=\{A,C,B\},S=\{D,E,F\}$$
+6. Move $$D$$from $$S$$to$$C$$ because $$D[D]<D[E]<D[F]$$.
+   * $$C=\{A,C,B,D\},S=\{E,F\}$$
+   * Relax $$D[F]$$.
+     * $$D[F]=D[D]+e_{DF}=6<8$$
+   * No more vertices put in the set$$S$$.
+     * $$C=\{A,C,B,D\},S=\{E,F\}$$
+7. Move$$E$$or $$F$$to$$C$$ because$$D[E]=D[F]$$
+   * $$C=\{A,C,B,D,E\},S=\{F\}$$
+   * Relax$$D[F]$$.
+     * $$D[F]=D[E]+e_{EF}=12>6$$❌ 
+   * No more vertices put in the set$$S$$.
+     * $$C=\{A,C,B,D,E\},S=\{F\}$$
+8.  Move$$F$$to$$C$$, now$$S=\emptyset$$.
 
 | $$C$$ | $$S$$ | $$s$$ | $$A$$ | $$B$$ | $$C$$ | $$D$$ | $$E$$ | $$F$$ | $$A$$ | $$B$$ | $$C$$ | $$D$$ | $$E$$ | $$F$$ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
