@@ -2,19 +2,19 @@
 
 ## Complexity
 
-* $$O()$$
+* $$O()$$ ⭐⭐⭐
   * $$O()$$ of `for` loops
     * finite loops
     * loop by adding
     * loop by dividing
   * $$O()$$ of recursions
   * Tight $$O()$$
-* $$\Theta()$$
+* $$\Theta()$$ ⭐⭐
 * $$\Omega()$$
 
 ## Recursion
 
-* Tail recursion
+* Tail recursion ⭐
 * Binary recursion
 
 ## Fundamental data structures
@@ -27,26 +27,26 @@
 
 ## Maps and Hash Tables
 
-* Hash
-* Collision
+* Hash ⭐⭐⭐
+* Collision ⭐⭐⭐
 
 ## Tree
 
-* Notations
+* Notations ⭐
   * Depth
   * Height
-* Traversals
+* Traversals ⭐⭐⭐
 * Priority Queues and Heaps
 * Trees
   * Binary tree
-  * Binary search tree
-  * AVL tree ⭐ 
+  * Binary search tree ⭐
+  * AVL tree ⭐⭐⭐
 
 ## Sorting
 
 * Divide and Conquer
-  * Quick ⭐ 
-  * Merge
+  * Quick ⭐⭐ 
+  * Merge ⭐⭐
 * Selection
 * Insertion
 * In-place vs not in-place
@@ -55,6 +55,6 @@
 
 ## Graph
 
-* Dijkstra’s Algorithm ⭐ 
+* Dijkstra’s Algorithm ⭐⭐⭐ 
 * ?
 
