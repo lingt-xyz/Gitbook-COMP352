@@ -55,7 +55,7 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
 
 {% hint style="info" %}
 * Problem 1.1: Draw a tree$$T_{11}$$where
-  * Pre-oder traversal yields:$$M\ J\ G\ I\ A$$.
+  * Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$J\ I\ G\ A\ M$$.
 {% endhint %}
 
