@@ -1,4 +1,6 @@
-# Data Structures and Algorithms
+# Links
 
-Tutorial materials
+* [Concordia notes](https://concordia.lingt.xyz/)
+
+
 
