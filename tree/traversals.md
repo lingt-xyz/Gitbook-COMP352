@@ -21,10 +21,10 @@ Use divide and conquer approach.
 {% hint style="warning" %}
 We have conquered the root$$E$$. Now, this problem was divided into two sub-problems:
 
-* Problem 1: Draw a tree$$T_1$$where
+* **Problem 1**: Draw a tree$$T_1$$where
   * Pre-order traversal yields: $$K\ D\ M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$D\ J\ I\ G\ A\ M\ K$$.
-* Problem 1: Draw a tree$$T_2$$where
+* **Problem 2**: Draw a tree$$T_2$$where
   * Pre-order traversal yields:$$C\ F\ H\ B\ L$$.
   * Post-order traversal yields:$$F\ L\ B\ H\ C$$.
 {% endhint %}
@@ -32,7 +32,7 @@ We have conquered the root$$E$$. Now, this problem was divided into two sub-prob
 #### Problem 1: Draw$$T_1$$ 
 
 {% hint style="info" %}
-* Problem 1: Draw a tree$$T_1$$where
+* **Problem 1**: Draw a tree$$T_1$$where
   * Pre-order traversal yields: $$K\ D\ M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$D\ J\ I\ G\ A\ M\ K$$.
 {% endhint %}
@@ -46,7 +46,7 @@ We follow the same approach as what we did on$$E$$.
 {% hint style="warning" %}
 We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was divided into a smaller problem:
 
-* Problem 1.1: Draw a tree$$T_{11}$$where
+* **Problem 1.1**: Draw a tree$$T_{11}$$where
   * Pre-oder traversal yields:$$M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$J\ I\ G\ A\ M$$.
 {% endhint %}
@@ -54,7 +54,7 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
 #### Problem 1.1: Draw $$T_{11}$$
 
 {% hint style="info" %}
-* Problem 1.1: Draw a tree$$T_{11}$$where
+* **Problem 1.1**: Draw a tree$$T_{11}$$where
   * Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$J\ I\ G\ A\ M$$.
 {% endhint %}
@@ -67,18 +67,20 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
      * From $$G\ I\ A$$in `pre-order` we know$$I$$can only be a child of$$G$$. This conclusion is consistent with the fact the in `post-order` they are$$I\ G\ A$$.
 
 {% hint style="success" %}
-Problem 1.1 Solved!
+**Problem 1.1** Solved!
 {% endhint %}
 
 {% hint style="success" %}
-Problem 1 Solved!
+**Problem 1** Solved!
 {% endhint %}
 
 #### Problem 2: Draw $$T_{2}$$ 
 
 {% hint style="info" %}
-* * Pre-order traversal yields:$$C\ F\ H\ B\ L$$.
-  * Post-order traversal yields:$$F\ L\ B\ H\ C$$.
+**Problem 2**: Draw a tree$$T_2$$where
+
+* Pre-order traversal yields:$$C\ F\ H\ B\ L$$.
+* Post-order traversal yields:$$F\ L\ B\ H\ C$$.
 {% endhint %}
 
 1. $$C$$is the root of$$T_{2}$$,$$F$$is the first child,$$H$$is the last child.
@@ -87,7 +89,7 @@ Problem 1 Solved!
 {% hint style="warning" %}
 We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was divided into a smaller problem:
 
-* Problem 2.1: Draw a tree$$T_{21}$$where
+* **Problem 2.1**: Draw a tree$$T_{21}$$where
   * Pre-oder traversal yields:$$H\ B\ L$$.
   * Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
@@ -95,7 +97,7 @@ We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was di
 #### Problem 2.1: Draw $$T_{21}$$
 
 {% hint style="info" %}
-* Problem 2.1: Draw a tree$$T_{21}$$where
+* **Problem 2.1**: Draw a tree$$T_{21}$$where
   * Pre-oder traversal yields:$$H\ B\ L$$.
   * Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
@@ -104,14 +106,14 @@ We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was di
 2. So$$H$$only has one child$$B$$, then$$L$$can only be a child of$$B$$.
 
 {% hint style="success" %}
-Problem 2.1 Solved!
+**Problem 2.1** Solved!
 {% endhint %}
 
 {% hint style="success" %}
-Problem 2 Solved!
+**Problem 2** Solved!
 {% endhint %}
 
 {% hint style="success" %}
-Problem solved!
+**Problem** solved!
 {% endhint %}
 
