@@ -2,6 +2,10 @@
 
 * [Data Structures and Algorithms](README.md)
 
+## Tree
+
+* [Traversals](tree/traversals.md)
+
 ## Graph
 
 * [Shortest paths](graph/shortest-paths/README.md)
