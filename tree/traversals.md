@@ -3,7 +3,7 @@
 ## Question
 
 {% hint style="info" %}
-#### Problem : Draw a tree$$T$$given that:
+**Problem** : Draw a tree$$T$$given that:
 
 * A pre-order traversal of $$T$$yields:$$E\ K\ D\ M\ J\ G\ I\ A\ C\ F\ H\ B\ L$$.
 * A post-order traversal of$$T$$yields:$$D\ J\ I\ G\ A\ M\ K\ F\ L\ B\ H\ C\ E$$.
@@ -45,7 +45,7 @@ We follow the same approach as what we did on$$E$$.
 2. Furthermore, we should know that$$M\ J\ G\ I\ A$$is a right-sub-tree of $$T_1$$because of `pre-order`. That is, if$$D$$has children, they should be in-between$$D$$and$$M$$in `pre-order` traversal.
 
 {% hint style="warning" %}
-We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was divided into a smaller problem:
+We have conquered the root$$K$$and its left child$$D$$. Now the **Problem 1** was divided into a smaller problem:
 
 * **Problem 1.1**: Draw a tree$$T_{11}$$where
   * Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
@@ -64,7 +64,7 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
      * If$$G$$is not a child of$$M$$, then it can only be a child of$$J$$because $$G$$is before$$A$$in `pre-order` . However, $$G$$cannot be a child of $$J$$because in `post-order` $$G$$is after$$J$$.
      * So we know $$G$$is a child of$$M$$; that is, $$M$$has three children$$J,G,A$$.
    * What about $$I$$?
-     * From $$G\ I\ A$$in `pre-order` we know$$I$$can only be a child of$$G$$. This conclusion is consistent with the fact the in `post-order` they are$$I\ G\ A$$.
+     * From $$G\ I\ A$$in `pre-order` we know$$I$$can only be a child of$$G$$. This conclusion is consistent with the fact that in `post-order` they are$$I\ G\ A$$.
 
 {% hint style="success" %}
 **Problem 1.1** Solved!
