@@ -2,10 +2,12 @@
 
 ## Question
 
+{% hint style="info" %}
 #### Problem : Draw a tree$$T$$given that:
 
 * A pre-order traversal of $$T$$yields:$$E\ K\ D\ M\ J\ G\ I\ A\ C\ F\ H\ B\ L$$.
 * A post-order traversal of$$T$$yields:$$D\ J\ I\ G\ A\ M\ K\ F\ L\ B\ H\ C\ E$$.
+{% endhint %}
 
 {% hint style="success" %}
 Use divide and conquer approach.
@@ -29,12 +31,11 @@ We have conquered the root$$E$$. Now, this problem was divided into two sub-prob
   * Post-order traversal yields:$$F\ L\ B\ H\ C$$.
 {% endhint %}
 
-#### Problem 1: Draw$$T_1$$ 
-
 {% hint style="info" %}
-* **Problem 1**: Draw a tree$$T_1$$where
-  * Pre-order traversal yields: $$K\ D\ M\ J\ G\ I\ A$$.
-  * Post-order traversal yields:$$D\ J\ I\ G\ A\ M\ K$$.
+**Problem 1**: Draw a tree$$T_1$$where
+
+* Pre-order traversal yields: $$K\ D\ M\ J\ G\ I\ A$$.
+* Post-order traversal yields:$$D\ J\ I\ G\ A\ M\ K$$.
 {% endhint %}
 
 We follow the same approach as what we did on$$E$$.
@@ -47,16 +48,15 @@ We follow the same approach as what we did on$$E$$.
 We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was divided into a smaller problem:
 
 * **Problem 1.1**: Draw a tree$$T_{11}$$where
-  * Pre-oder traversal yields:$$M\ J\ G\ I\ A$$.
+  * Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
   * Post-order traversal yields:$$J\ I\ G\ A\ M$$.
 {% endhint %}
 
-#### Problem 1.1: Draw $$T_{11}$$
-
 {% hint style="info" %}
-* **Problem 1.1**: Draw a tree$$T_{11}$$where
-  * Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
-  * Post-order traversal yields:$$J\ I\ G\ A\ M$$.
+**Problem 1.1**: Draw a tree$$T_{11}$$where
+
+* Pre-order traversal yields:$$M\ J\ G\ I\ A$$.
+* Post-order traversal yields:$$J\ I\ G\ A\ M$$.
 {% endhint %}
 
 1. $$M$$is the root of$$T_{11}$$,$$J$$is the first child,$$A$$is the last child.
@@ -74,8 +74,6 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
 **Problem 1** Solved!
 {% endhint %}
 
-#### Problem 2: Draw $$T_{2}$$ 
-
 {% hint style="info" %}
 **Problem 2**: Draw a tree$$T_2$$where
 
@@ -90,16 +88,15 @@ We have conquered the root$$K$$and its left child$$D$$. Now the problem 1 was di
 We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was divided into a smaller problem:
 
 * **Problem 2.1**: Draw a tree$$T_{21}$$where
-  * Pre-oder traversal yields:$$H\ B\ L$$.
+  * Pre-order traversal yields:$$H\ B\ L$$.
   * Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
 
-#### Problem 2.1: Draw $$T_{21}$$
-
 {% hint style="info" %}
-* **Problem 2.1**: Draw a tree$$T_{21}$$where
-  * Pre-oder traversal yields:$$H\ B\ L$$.
-  * Post-order traversal yields:$$L\ B\ H$$.
+**Problem 2.1**: Draw a tree$$T_{21}$$where
+
+* Pre-order traversal yields:$$H\ B\ L$$.
+* Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
 
 1. $$H$$is the root of$$T_{21}$$, the first child is$$B$$, and the last child is$$B$$.
