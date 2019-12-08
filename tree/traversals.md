@@ -13,10 +13,10 @@
 Use divide and conquer approach.
 {% endhint %}
 
-1. From `pre-order`, we know$$E$$is the root of$$T$$. This conclusion is consistent with the fact that$$E$$is the last node in `post-order`.
-2. From `pre-order`, we know$$K$$is$$E$$'s first child; from `post-order`, we know$$C$$is$$E$$'s last child.
-   * If$$E$$has another child which is in-between$$K$$and$$C$$ , it should be$$D$$because of `pre-order`. However,$$D$$is the first node in `post-order`, so$$D$$cannot be in-between$$K$$and$$C$$.
-3. Because$$E$$only has a left child$$K$$and a right child$$C$$, we know
+1. `pre-order`yields $$E\ K\ D\ M \cdots\Rightarrow E$$ is the root of$$T$$,$$K$$is the first child of$$T$$.
+2. `post-order` yields$$\cdots B\ H\ C\ E\Rightarrow E$$is the root of$$T$$,$$C$$is the last child of$$T$$.
+3. If$$E$$has another child which is in-between$$K$$and$$C$$ , it should be$$D$$because of `pre-order`. However,$$D$$is the first node in `post-order`, so$$D$$cannot be in-between$$K$$and$$C$$.
+4. $$E$$only has a left child$$K$$and a right child$$C\Rightarrow$$
    * From `pre-oder`, $$K\ D\ M\ J\ G\ I\ A$$is a left-sub-tree;$$C\ F\ H\ B\ L$$is a right-sub-tree.
    * From `post-order`,$$D\ J\ I\ G\ A\ M\ K$$is a left-sub-tree;$$F\ L\ B\ H\ C$$is a right-sub-tree.
 
