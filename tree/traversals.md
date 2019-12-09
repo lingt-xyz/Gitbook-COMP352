@@ -70,6 +70,8 @@ We have conquered the root$$K$$and its left child$$D$$. Now the **Problem 1** wa
    * What about $$I$$?
      * From $$G\ I\ A$$in `pre-order` we know$$I$$can only be a child of$$G$$. This conclusion is consistent with the fact that in `post-order` they are$$I\ G\ A$$.
 
+![](../.gitbook/assets/p_t_3.png)
+
 {% hint style="success" %}
 **Problem 1.1** Solved!
 {% endhint %}
