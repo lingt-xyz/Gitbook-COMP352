@@ -20,6 +20,8 @@ Use divide and conquer approach.
    * From `pre-oder`, $$K\ D\ M\ J\ G\ I\ A$$is a left-sub-tree;$$C\ F\ H\ B\ L$$is a right-sub-tree.
    * From `post-order`,$$D\ J\ I\ G\ A\ M\ K$$is a left-sub-tree;$$F\ L\ B\ H\ C$$is a right-sub-tree.
 
+![](../.gitbook/assets/p_t_1.png)
+
 {% hint style="warning" %}
 We have conquered the root$$E$$. Now, this problem was divided into two sub-problems:
 
@@ -43,6 +45,8 @@ We follow the same approach as what we did on$$E$$.
 1. $$K$$is the root,$$D$$is the first child of$$K$$and$$M$$is the last child of$$K$$.
    * $$K$$has no more child because if it has a child $$K_C$$, then $$K_C$$would be in-between$$D$$and$$M$$in `pre-order` traversal.
 2. Furthermore, we should know that$$M\ J\ G\ I\ A$$is a right-sub-tree of $$T_1$$because of `pre-order`. That is, if$$D$$has children, they should be in-between$$D$$and$$M$$in `pre-order` traversal.
+
+![](../.gitbook/assets/p_t_2.png)
 
 {% hint style="warning" %}
 We have conquered the root$$K$$and its left child$$D$$. Now the **Problem 1** was divided into a smaller problem:
