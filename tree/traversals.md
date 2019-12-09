@@ -93,6 +93,8 @@ We have conquered the root$$K$$and its left child$$D$$. Now the **Problem 1** wa
 1. $$C$$is the root of$$T_{2}$$,$$F$$is the first child,$$H$$is the last child.
    * This is the same case as Problem 1: $$F$$is the only left-sub-tree of$$T_{2}$$and$$H\ B\ L$$is the right-sub-tree.
 
+![](../.gitbook/assets/p_t_5.png)
+
 {% hint style="warning" %}
 We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was divided into a smaller problem:
 
@@ -100,9 +102,6 @@ We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was di
   * Pre-order traversal yields:$$H\ B\ L$$.
   * Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
-
-
-![](../.gitbook/assets/p_t_5.png)
 
 {% hint style="info" %}
 **Problem 2.1**: Draw a tree$$T_{21}$$where
