@@ -76,6 +76,9 @@ We have conquered the root$$K$$and its left child$$D$$. Now the **Problem 1** wa
 **Problem 1.1** Solved!
 {% endhint %}
 
+
+![](../.gitbook/assets/p_t_4.png)
+
 {% hint style="success" %}
 **Problem 1** Solved!
 {% endhint %}
@@ -98,6 +101,9 @@ We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was di
   * Post-order traversal yields:$$L\ B\ H$$.
 {% endhint %}
 
+
+![](../.gitbook/assets/p_t_5.png)
+
 {% hint style="info" %}
 **Problem 2.1**: Draw a tree$$T_{21}$$where
 
@@ -108,13 +114,22 @@ We have conquered the root$$C$$and its left child$$F$$. Now the problem 2 was di
 1. $$H$$is the root of$$T_{21}$$, the first child is$$B$$, and the last child is$$B$$.
 2. So$$H$$only has one child$$B$$, then$$L$$can only be a child of$$B$$.
 
+
+![](../.gitbook/assets/p_t_6.png)
+
 {% hint style="success" %}
 **Problem 2.1** Solved!
 {% endhint %}
 
+
+![](../.gitbook/assets/p_t_7.png)
+
 {% hint style="success" %}
 **Problem 2** Solved!
 {% endhint %}
+
+
+![](../.gitbook/assets/p_t_8.png)
 
 {% hint style="success" %}
 **Problem** solved!
