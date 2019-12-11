@@ -32,7 +32,7 @@ Stretch it first, then relax, so it's called relaxation.
 
 1. Initially,$$C=\emptyset, S=\{v\}$$, where $$v$$is the starting vertex.
 2. Do edge relaxation initialization; that is,$$D[v]=0$$and$$D[u]=\infty$$for each other vertex$$u$$.
-3. Select the vertex$$s$$in$$S$$who has the shortest path to$$v$$,.
+3. Select the vertex$$s$$in$$S$$which has the shortest path to$$v$$.
    1. Move$$s$$to$$C$$.
    2. For every vertex which is connected to$$s$$and not in$$C$$, do edge relaxation.
    3. Add these connected vertices to$$C$$.
