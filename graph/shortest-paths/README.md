@@ -1,6 +1,6 @@
 # Shortest paths
 
-## Problem define
+## Problem Define
 
 Given a weighted graph and two vertices$$u$$and$$v$$, we want to find a path of minimum total weight between$$u$$and$$v$$.
 
